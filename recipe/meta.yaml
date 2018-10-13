@@ -1,9 +1,9 @@
 {% set name = "Flask-Babel" %}
-{% set version = "0.11.2" %}
+{% set version = "0.9" %}
 {% set compress_type = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "c0d75710bd4b0fe866f9f2347de6e19208712f9cec006436b4c1c15d4cb0c939" %}
-{% set build = 1 %}
+{% set hash = "4afd150f360434b00684ba7848358f7961072fd0658a6e81aaa578522699fb4c" %}
+{% set build = 0 %}
 
 package:
   name: {{ name|lower }}
@@ -17,22 +17,20 @@ source:
 build:
   noarch: python
   number: {{ build }}
-  script: python -m pip install --no-deps --ignore-installed .
+  script: python -m pip install --no-deps --ignore-installed --verbose .
 
 requirements:
   host:
     - pip
     - python
     - setuptools
-    - flask
-    - babel >=2.3
-    - jinja2 >=2.5
 
   run:
     - python
     - flask
     - babel >=2.3
     - jinja2 >=2.5
+    - speaklater >=1.2
 
 test:
   imports:
