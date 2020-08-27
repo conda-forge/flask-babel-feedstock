@@ -5,7 +5,7 @@ Home: https://github.com/python-babel/flask-babel
 
 Package license: BSD 3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Adds i18n/l10n support to Flask applications
 
