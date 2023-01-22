@@ -1,5 +1,5 @@
 {% set name = "Flask-Babel" %}
-{% set version = "2.0.0" %}
+{% set version = "3.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f9faf45cdb2e1a32ea2ec14403587d4295108f35017a7821a2b1acb8cfd9257d
+  sha256: f3e8687e470ab896f18e86e7faa787f1725a0e8d9469572719e46a262d941f2f
 
 build:
   noarch: python
@@ -17,21 +17,27 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.7,<4.0
     - setuptools
     - flask
     - babel >=2.3
     - jinja2 >=2.5
 
   run:
-    - python
+    - python >=3.7,<4.0
     - flask
     - babel >=2.3
     - jinja2 >=2.5
+    - pytz >=2022.7,<2023.0
 
 test:
   imports:
     - flask_babel
+  commands:
+    - pip check
+  requires:
+    - pip
+
 
 about:
   home: https://github.com/python-babel/flask-babel
