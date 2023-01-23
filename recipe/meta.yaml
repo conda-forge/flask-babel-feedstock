@@ -1,4 +1,4 @@
-{% set name = "Flask-Babel" %}
+{% set name = "flask-babel" %}
 {% set version = "3.0.0" %}
 
 package:
