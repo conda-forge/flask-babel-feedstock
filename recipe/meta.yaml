@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/flask_babel-{{ version }}.tar.gz
   sha256: f3e8687e470ab896f18e86e7faa787f1725a0e8d9469572719e46a262d941f2f
 
 build:
