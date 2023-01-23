@@ -1,13 +1,13 @@
-{% set name = "Flask-Babel" %}
-{% set version = "2.0.0" %}
+{% set name = "flask-babel" %}
+{% set version = "3.0.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f9faf45cdb2e1a32ea2ec14403587d4295108f35017a7821a2b1acb8cfd9257d
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/flask_babel-{{ version }}.tar.gz
+  sha256: f3e8687e470ab896f18e86e7faa787f1725a0e8d9469572719e46a262d941f2f
 
 build:
   noarch: python
@@ -16,27 +16,30 @@ build:
 
 requirements:
   host:
+    - python >=3.7,<4.0
     - pip
-    - python
-    - setuptools
-    - flask
-    - babel >=2.3
-    - jinja2 >=2.5
+    - poetry-core
 
   run:
-    - python
-    - flask
-    - babel >=2.3
-    - jinja2 >=2.5
+    - python >=3.7,<4.0
+    - babel >=2.11.0,<3.0.0
+    - flask >=2.0.0,<3.0.0
+    - jinja2 >=3.1.2,<4.0.0
+    - pytz >=2022.7,<2023.0
 
 test:
   imports:
     - flask_babel
+  commands:
+    - pip check
+  requires:
+    - pip
+
 
 about:
   home: https://github.com/python-babel/flask-babel
   license_file: LICENSE
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_family: BSD
   summary: Adds i18n/l10n support to Flask applications
   dev_url: https://github.com/python-babel/flask-babel
