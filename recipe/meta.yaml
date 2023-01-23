@@ -16,18 +16,14 @@ build:
 
 requirements:
   host:
-    - pip
     - python >=3.7,<4.0
-    - setuptools
-    - flask
-    - babel >=2.3
-    - jinja2 >=2.5
+    - pip
 
   run:
     - python >=3.7,<4.0
-    - flask
-    - babel >=2.3
-    - jinja2 >=2.5
+    - babel >=2.11.0,<3.0.0
+    - flask >=2.0.0,<3.0.0
+    - jinja2 >=3.1.2,<4.0.0
     - pytz >=2022.7,<2023.0
 
 test:
