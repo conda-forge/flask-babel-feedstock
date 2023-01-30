@@ -1,5 +1,5 @@
 {% set name = "flask-babel" %}
-{% set version = "3.0.0" %}
+{% set version = "3.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/flask_babel-{{ version }}.tar.gz
-  sha256: f3e8687e470ab896f18e86e7faa787f1725a0e8d9469572719e46a262d941f2f
+  sha256: d408cace25514bea8b92e898fd7e55877fbac79b71bc230e266ff515408eba38
 
 build:
   noarch: python
