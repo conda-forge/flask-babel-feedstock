@@ -1,11 +1,11 @@
-About flask-babel
-=================
+About flask-babel-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/flask-babel-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/python-babel/flask-babel
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/flask-babel-feedstock/blob/main/LICENSE.txt)
 
 Summary: Adds i18n/l10n support to Flask applications
 
