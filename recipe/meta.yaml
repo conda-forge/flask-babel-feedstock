@@ -1,5 +1,5 @@
 {% set name = "flask-babel" %}
-{% set version = "3.1.0" %}
+{% set version = "4.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/flask_babel-{{ version }}.tar.gz
-  sha256: be015772c5d7f046f3b99c508dcf618636eb93d21b713b356db79f3e79f69f39
+  sha256: dbeab4027a3f4a87678a11686496e98e1492eb793cbdd77ab50f4e9a2602a593
 
 build:
   noarch: python
@@ -16,12 +16,12 @@ build:
 
 requirements:
   host:
-    - python >=3.7,<4.0
+    - python >=3.8,<4.0
+    - poetry-core >=1.0.0
     - pip
-    - poetry-core
 
   run:
-    - python >=3.7,<4.0
+    - python >=3.8.0,<4.0.0
     - pytz >=2022.7
     - flask >=2.0.0
     - babel >=2.12.0
