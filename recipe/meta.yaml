@@ -19,13 +19,10 @@ requirements:
     - pip
     - python >=3.7
     - setuptools
-    - flask
-    - babel >=2.3
-    - jinja2 >=2.5
 
   run:
     - python >=3.7
-    - flask
+    - flask <3
     - babel >=2.3
     - jinja2 >=2.5
 
