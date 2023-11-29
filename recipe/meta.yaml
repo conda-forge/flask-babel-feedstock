@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -36,7 +36,7 @@ test:
 about:
   home: https://github.com/python-babel/flask-babel
   license_file: LICENSE
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_family: BSD
   summary: Adds i18n/l10n support to Flask applications
   dev_url: https://github.com/python-babel/flask-babel
